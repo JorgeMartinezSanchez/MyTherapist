@@ -1,0 +1,105 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-div {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 2rem 1.5rem;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+}
+
+.title-div h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.3px;
+}
+
+.divider {
+    border: none;
+    border-left: 1px solid #e0e0e0;
+    margin: 0;
+    align-self: stretch;
+}
+
+.lateral-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-item {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #080808;
+}
+
+.menu-item:hover {
+    background: #e1e1e1;
+}
+
+.menu-item.active {
+    background: #000000;
+    color: white;
+    box-shadow: 0 4px 12px rgba(125, 125, 125, 0.35);
+}
+
+.menu-title {
+    font-size: 0.95rem;
+    font-weight: 200;
+}
+
+.create-turn-button{
+    margin-top: 425px; /* empuja el botón al fondo del sidebar */
+    width: 100%;
+    padding: 0.75rem;
+    background: transparent;
+    color: #ffffff;
+    background-color: rgb(27, 84, 255);
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout-button {
+    margin-top: auto; /* empuja el botón al fondo del sidebar */
+    width: 100%;
+    padding: 0.75rem;
+    background: transparent;
+    color: #999;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout-button:hover {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+    background: #fff5f5;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    color: #1a1a1a;
+}

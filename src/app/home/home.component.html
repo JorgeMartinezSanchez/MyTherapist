@@ -1,0 +1,29 @@
+<div class="main-div">
+
+    <div class="title-div">
+        <h2>Welcome, {{UserCredentials[0]}} {{UserCredentials[1]}}!</h2>
+    </div>
+
+    <div class="selector-div">
+        <nav class="lateral-menu">
+            <div class="menu-item" routerLink="today" routerLinkActive="active">
+                <span class="menu-title">Home</span>
+            </div>
+
+            <div class="menu-item" routerLink="calendar" routerLinkActive="active">
+                <span class="menu-title">Calendar</span>
+            </div>
+        </nav>
+    </div>
+
+    <button class="create-turn-button" (click)="CreateTurn()">Create Turn</button>
+
+    <button class="logout-button" (click)="logoutFromPage()">Log Out</button>
+
+</div>
+
+<hr class="divider">
+
+<main class="main-content">
+    <router-outlet></router-outlet>
+</main>

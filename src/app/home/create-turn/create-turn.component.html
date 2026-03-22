@@ -1,0 +1,92 @@
+<h1>New Session</h1>
+
+@if(getStep() === 1){
+    <form [formGroup]="patientForm">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Patient Name</mat-label>
+            <input matInput formControlName="name" type="text">
+            @if (patientForm.get('name')?.hasError('required') && patientForm.get('name')?.touched) {
+                <mat-error>Name is required</mat-error>
+            } @else if (patientForm.get('name')?.hasError('pattern') && patientForm.get('name')?.touched) {
+                <mat-error>Only letters and spaces allowed</mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Patient Phone Number</mat-label>
+            <input matInput formControlName="phone" type="text">
+            @if (patientForm.get('phone')?.hasError('required') && patientForm.get('phone')?.touched) {
+                <mat-error>Phone is required</mat-error>
+            } @else if (patientForm.get('phone')?.hasError('pattern') && patientForm.get('phone')?.touched) {
+                <mat-error>Invalid phone format (7-15 digits)</mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Patient Email</mat-label>
+            <input matInput formControlName="email" type="email">
+            @if (patientForm.get('email')?.hasError('required') && patientForm.get('email')?.touched) {
+                <mat-error>Email is required</mat-error>
+            } @else if (patientForm.get('email')?.hasError('email') && patientForm.get('email')?.touched) {
+                <mat-error>Invalid email format</mat-error>
+            }
+        </mat-form-field>
+
+        <button class="next-button" (click)="nextStep()">Next</button>
+        <button class="back-button" (click)="getBackToHome()">Back</button>
+    </form>
+
+} @else {
+    <div class="step2-container">
+
+        <!-- CALENDAR -->
+        <div class="custom-calendar">
+            <div class="cal-header">
+                <button class="cal-nav" (click)="prevMonth()">&#8249;</button>
+                <span class="cal-title">{{ getMonthName() }} {{ currentYear }}</span>
+                <button class="cal-nav" (click)="nextMonth()">&#8250;</button>
+            </div>
+
+            <div class="cal-grid">
+                <div class="cal-weekday" *ngFor="let d of weekDays">{{ d }}</div>
+
+                <!-- Empty cells before the first day -->
+                <div class="cal-empty" *ngFor="let e of getLeadingBlanks()"></div>
+
+                <!-- Day cells -->
+                <div
+                    class="cal-day"
+                    *ngFor="let day of getDaysInMonth()"
+                    [class.today]="isToday(day)"
+                    [class.selected]="isSelected(day)"
+                    [class.past]="isPast(day)"
+                    (click)="selectDay(day)"
+                >
+                    {{ day }}
+                </div>
+            </div>
+        </div>
+
+        <!-- TIME PICKER -->
+        <div class="custom-timepicker">
+            <div class="time-col">
+                <button class="time-arrow" (click)="incrementHour()">&#9650;</button>
+                <span class="time-value">{{ padZero(displayHour) }}</span>
+                <button class="time-arrow" (click)="decrementHour()">&#9660;</button>
+            </div>
+            <span class="time-separator">:</span>
+            <div class="time-col">
+                <button class="time-arrow" (click)="incrementMinute()">&#9650;</button>
+                <span class="time-value">{{ padZero(displayMinute) }}</span>
+                <button class="time-arrow" (click)="decrementMinute()">&#9660;</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="step2-actions">
+        <button class="back-to-form-1" (click)="goBack()">Back</button>
+        <button class="create-button" (click)="createTurn()">Create</button>
+    </div>
+}

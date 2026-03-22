@@ -1,0 +1,11 @@
+<div class="login-card">
+    <h2>Log in</h2>
+<input placeholder="Email" [(ngModel)]="email">
+<input placeholder="Password" [type]="showPassword ? 'text' : 'password'" [(ngModel)]="password">
+
+    <button (click)="onSubmit()">Log in</button>
+
+    @if (errorMessage != '') {
+        <p>{{ errorMessage }}</p>
+    }
+<div>

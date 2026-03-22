@@ -1,0 +1,10 @@
+.today-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar{
+    height: 560px;
+    width: 350px;
+}
