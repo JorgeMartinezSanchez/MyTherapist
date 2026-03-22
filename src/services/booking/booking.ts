@@ -53,4 +53,17 @@ export class BookingService {
 
     return data;
   }
+
+  async deleteSession(sessionId: string) {
+    const { error } = await this.supabase.client
+      .from('Sessions')
+      .delete()
+      .eq('id', sessionId);
+
+    if (error) {
+      console.error('Error al eliminar la sesión:', error);
+      throw error; 
+    }
+    return true; 
+  }
 }

@@ -1,1 +1,11 @@
-<full-calendar class="calendar" [options]="calendarOptions"></full-calendar>
+<full-calendar [options]="calendarOptions"></full-calendar>
+
+<div class="custom-dropdown" 
+     *ngIf="showMenu" 
+     [style.left.px]="menuX" 
+     [style.top.px]="menuY"
+     (click)="preventClose($event)"> <ul>
+        <li (click)="onEditClick()">✏️ Edit Session</li>
+        <li class="delete-btn" (click)="onDeleteClick()">🗑️ Delete Session</li>
+    </ul>
+</div>
