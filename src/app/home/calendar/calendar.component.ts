@@ -127,21 +127,16 @@ export class CalendarComponent implements OnInit {
   }
 
   async handleSaveEdit(event: {id: string, newDate: string, newTime: string}) {
+    // ESTE ES EL DETECTOR:
+    console.log("¡El Calendario escuchó el evento!", event);
+
     try {
-      // 1. Llamamos a tu servicio de Supabase
+      // Si el console.log de arriba funciona, esta línea debería llamar a booking.ts
       await this.sessionService.editSession(event.id, event.newDate, event.newTime);
-      
-      // 2. Cerramos el Pop-up
       this.showEditModal = false;
-      
-      // 3. Volvemos a consultar a Supabase para que el calendario se actualice
-      // Si en calendar.ts tienes la carga en loadEvents(), llama a loadEvents.
-      // Si la tienes directo en ngOnInit, llama a this.ngOnInit()
       await this.ngOnInit(); 
-      
     } catch (error) {
-      console.error('Error al editar:', error);
-      alert('Error saving the changes in Supabase.');
+      console.error('Error al guardar la edición:', error);
     }
   }
 }

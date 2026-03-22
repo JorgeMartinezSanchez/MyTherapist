@@ -40,17 +40,28 @@ export class BookingService {
   }
 
   async editSession(sessionId: string, newDate: string, newTime: string) {
+    console.log("--- INICIANDO UPDATE ---");
+    console.log("1. ID recibido desde Angular:", sessionId);
+    
+    // TRUCO: Si el ID tiene letras (UUID), lo dejamos como string. Si es solo números, lo convertimos.
+    const finalId = isNaN(Number(sessionId)) ? sessionId : Number(sessionId);
+    console.log("2. ID final enviado a Supabase:", finalId);
+    console.log("3. Datos a actualizar:", { date: newDate, time: newTime });
+
     const { data, error } = await this.supabase.client
       .from('Sessions')
       .update({ date: newDate, time: newTime })
-      .eq('id', sessionId)
+      .eq('id', finalId)
       .select();
+
+    console.log("4. Error de Supabase:", error);
+    console.log("5. Data de Supabase:", data);
+    console.log("------------------------");
 
     if (error) {
       console.error('Error al actualizar la sesión:', error);
       throw error; 
     }
-
     return data;
   }
 
@@ -58,12 +69,13 @@ export class BookingService {
     const { error } = await this.supabase.client
       .from('Sessions')
       .delete()
-      .eq('id', sessionId);
+      .eq('id', Number(sessionId));
 
     if (error) {
       console.error('Error al eliminar la sesión:', error);
       throw error; 
     }
+    console.log(`Data edited in: ${sessionId}`);
     return true; 
   }
 }
