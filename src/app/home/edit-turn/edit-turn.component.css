@@ -1,0 +1,168 @@
+/* --- MAGIA DEL POP-OUT (MODAL) --- */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Asegura que esté por encima de todo */
+    backdrop-filter: blur(3px); /* Efecto cristalino opcional */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 380px; /* Más angosto que la página completa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* --- ESTILOS ADAPTADOS DEL CALENDARIO --- */
+.cal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cal-nav {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.cal-month-year {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+}
+
+.cal-weekday {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.cal-day {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.cal-day:hover:not(.past) {
+    background-color: #f0f0f0;
+}
+
+.cal-day.past {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.cal-day.selected {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
+
+.cal-day.today {
+    border: 1px solid #ccc;
+}
+
+/* --- ESTILOS DEL TIMEPICKER --- */
+.custom-timepicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.time-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-arrow {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.time-value {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0.2rem 0;
+}
+
+.time-separator {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* --- ESTILOS DE LOS BOTONES DE GUARDAR/CANCELAR --- */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-cancel, .btn-save {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-cancel {
+    background: transparent;
+    color: #666;
+}
+
+.btn-cancel:hover {
+    background: #f0f0f0;
+}
+
+.btn-save {
+    background: #1b54ff; /* Mismo azul que usas en el sidebar */
+    color: white;
+}
+
+.btn-save:hover {
+    background: #143ebf;
+}

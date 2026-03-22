@@ -7,10 +7,11 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import { BookingService } from '../../../services/booking/booking';
 import { AuthService } from '../../../services/auth/auth.service';
 import { EventClickArg } from '@fullcalendar/core';
+import { EditTurnComponent } from '../edit-turn/edit-turn.component';
 
 @Component({
   selector: 'app-calendar',
-  imports: [FullCalendarModule, NgIf],
+  imports: [FullCalendarModule, NgIf, EditTurnComponent],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.css'
 })
@@ -26,6 +27,10 @@ export class CalendarComponent implements OnInit {
   selectedSessionId: string = '';
 
   calendarEvents: any[] = [];
+
+  showEditModal = false;
+  selectedDate = '';
+  selectedTime = '';
 
   calendarOptions: CalendarOptions = {
     plugins: [dayGridPlugin, timeGridPlugin],
@@ -74,9 +79,18 @@ export class CalendarComponent implements OnInit {
   // 3. Función que se dispara al hacer click en una cita
   handleEventClick(clickInfo: EventClickArg) {
     clickInfo.jsEvent.preventDefault();
-    clickInfo.jsEvent.stopPropagation(); // Evita que se cierre instantáneamente
+    clickInfo.jsEvent.stopPropagation(); 
     
+    // Capturamos el ID
     this.selectedSessionId = clickInfo.event.id;
+
+    // FullCalendar guarda la fecha entera en 'startStr' (Ej: "2026-03-22T14:30:00-04:00")
+    // Usamos split('T') para separar la fecha de la hora
+    if (clickInfo.event.startStr) {
+      this.selectedDate = clickInfo.event.startStr.split('T')[0]; // Se queda con "2026-03-22"
+      this.selectedTime = clickInfo.event.startStr.split('T')[1].substring(0, 5); // Se queda con "14:30"
+    }
+
     this.menuX = clickInfo.jsEvent.clientX;
     this.menuY = clickInfo.jsEvent.clientY;
     this.showMenu = true;
@@ -98,10 +112,8 @@ export class CalendarComponent implements OnInit {
 
   // 5. Función de edición (para el futuro pop-up)
   onEditClick() {
-    this.showMenu = false;
-    // Aquí abrirías tu componente "app-edit-session-modal" 
-    // pasándole el this.selectedSessionId
-    console.log('Open edit modal for:', this.selectedSessionId);
+    this.showMenu = false; // Cerramos el menú pequeñito
+    this.showEditModal = true; // Abrimos el Pop-up grande de edición
   }
 
   // 6. Cerrar el menú si el usuario hace click en cualquier otro lado de la pantalla
@@ -112,5 +124,24 @@ export class CalendarComponent implements OnInit {
   
   preventClose(event: /*Event*/ MouseEvent) {
     event.stopPropagation();
+  }
+
+  async handleSaveEdit(event: {id: string, newDate: string, newTime: string}) {
+    try {
+      // 1. Llamamos a tu servicio de Supabase
+      await this.sessionService.editSession(event.id, event.newDate, event.newTime);
+      
+      // 2. Cerramos el Pop-up
+      this.showEditModal = false;
+      
+      // 3. Volvemos a consultar a Supabase para que el calendario se actualice
+      // Si en calendar.ts tienes la carga en loadEvents(), llama a loadEvents.
+      // Si la tienes directo en ngOnInit, llama a this.ngOnInit()
+      await this.ngOnInit(); 
+      
+    } catch (error) {
+      console.error('Error al editar:', error);
+      alert('Error saving the changes in Supabase.');
+    }
   }
 }

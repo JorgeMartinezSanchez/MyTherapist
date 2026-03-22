@@ -9,3 +9,12 @@
         <li class="delete-btn" (click)="onDeleteClick()">🗑️ Delete Session</li>
     </ul>
 </div>
+
+<app-edit-turn 
+    *ngIf="showEditModal" 
+    [sessionId]="selectedSessionId" 
+    [currentDate]="selectedDate" 
+    [currentTime]="selectedTime"
+    (onClose)="showEditModal = false" 
+    (onSave)="handleSaveEdit($event)">
+</app-edit-turn>

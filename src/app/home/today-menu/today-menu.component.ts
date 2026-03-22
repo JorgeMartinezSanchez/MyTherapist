@@ -6,6 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { BookingService } from '../../../services/booking/booking';
 import { AuthService } from '../../../services/auth/auth.service';
+import { EditTurnComponent } from '../edit-turn/edit-turn.component';
 
 @Component({
   selector: 'app-today-menu',

@@ -1,3 +1,50 @@
-<h2>Edit</h2>
+<div class="modal-backdrop" (click)="cancel($event)">
+    
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        
+        <h2>Edit Session</h2>
 
+        <div class="calendar-wrapper">
+            <div class="cal-header">
+                <button class="cal-nav" (click)="prevMonth()">&#10094;</button>
+                <div class="cal-month-year">{{ monthName }} {{ currentYear }}</div>
+                <button class="cal-nav" (click)="nextMonth()">&#10095;</button>
+            </div>
 
+            <div class="cal-grid">
+                <div class="cal-weekday" *ngFor="let w of weekDays">{{ w }}</div>
+
+                <div class="cal-empty" *ngFor="let e of getLeadingBlanks()"></div>
+
+                <div class="cal-day"
+                     *ngFor="let day of getDaysInMonth()"
+                     [class.today]="isToday(day)"
+                     [class.selected]="isSelected(day)"
+                     [class.past]="isPast(day)"
+                     (click)="selectDay(day)">
+                    {{ day }}
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-timepicker">
+            <div class="time-col">
+                <button class="time-arrow" (click)="incrementHour()">&#9650;</button>
+                <span class="time-value">{{ padZero(displayHour) }}</span>
+                <button class="time-arrow" (click)="decrementHour()">&#9660;</button>
+            </div>
+            <span class="time-separator">:</span>
+            <div class="time-col">
+                <button class="time-arrow" (click)="incrementMinute()">&#9650;</button>
+                <span class="time-value">{{ padZero(displayMinute) }}</span>
+                <button class="time-arrow" (click)="decrementMinute()">&#9660;</button>
+            </div>
+        </div>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" (click)="cancel($event)">Cancel</button>
+            <button class="btn-save" (click)="save()">Save Changes</button>
+        </div>
+
+    </div>
+</div>

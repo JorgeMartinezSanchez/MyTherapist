@@ -2,3 +2,12 @@
     <h2>Today</h2>
     <full-calendar class="calendar" [options]="calendarOptions"></full-calendar>
 </div>
+
+<!--app-edit-turn 
+    *ngIf="showEditModal" 
+    [sessionId]="selectedSessionId" 
+    [currentDate]="selectedDate" 
+    [currentTime]="selectedTime"
+    (onClose)="showEditModal = false" 
+    (onSave)="handleSaveEdit($event)">
+</app-edit-turn-->
