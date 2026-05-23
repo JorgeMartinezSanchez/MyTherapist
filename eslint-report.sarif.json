@@ -1,0 +1,1762 @@
+{
+  "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "@angular-eslint/template/click-events-have-key-events",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin-template/docs/rules/click-events-have-key-events.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "[Accessibility] Ensures that the click event is accompanied with at least one key event keyup, keydown or keypress."
+              }
+            },
+            {
+              "id": "@angular-eslint/template/interactive-supports-focus",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin-template/docs/rules/interactive-supports-focus.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "[Accessibility] Ensures that elements with interactive handlers like `(click)` are focusable."
+              }
+            },
+            {
+              "id": "@angular-eslint/template/prefer-control-flow",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin-template/docs/rules/prefer-control-flow.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Ensures that the built-in control flow is used."
+              }
+            },
+            {
+              "id": "@typescript-eslint/no-unused-vars",
+              "helpUri": "https://typescript-eslint.io/rules/no-unused-vars",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow unused variables"
+              }
+            },
+            {
+              "id": "@typescript-eslint/no-inferrable-types",
+              "helpUri": "https://typescript-eslint.io/rules/no-inferrable-types",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean"
+              }
+            },
+            {
+              "id": "@typescript-eslint/no-explicit-any",
+              "helpUri": "https://typescript-eslint.io/rules/no-explicit-any",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow the `any` type"
+              }
+            },
+            {
+              "id": "@angular-eslint/prefer-inject",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-inject.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Prefer using the inject() function over constructor parameter injection"
+              }
+            },
+            {
+              "id": "@angular-eslint/no-output-on-prefix",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-output-on-prefix.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Ensures that output bindings, including aliases, are not named \"on\", nor prefixed with it. See more at https://angular.dev/guide/components/outputs#choosing-event-names"
+              }
+            },
+            {
+              "id": "@angular-eslint/template/eqeqeq",
+              "helpUri": "https://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin-template/docs/rules/eqeqeq.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Requires `===` and `!==` in place of `==` and `!=`"
+              }
+            }
+          ],
+          "version": "10.4.0"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_cdk_bidi.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_cdk_text-field.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_common.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_core.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_forms.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_material_form-field.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_material_input.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_platform-browser.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@angular_router.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@fullcalendar_angular.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@fullcalendar_daygrid.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@fullcalendar_timegrid.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/@supabase_supabase-js.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-2CZXK2Z7.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-4PIXHBUX.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-4RLAI5UF.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-5K356HEJ.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-73NWLWXS.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-B2KI3AIV.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-D3Q6OMHH.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-FFJRWTIK.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-PA7WVBF4.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-QMELVGU5.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-U5BGXTXY.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-V63WPL3W.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/chunk-ZAU3LC7T.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/.angular/cache/21.2.1/MyTherapist/vite/deps/rxjs.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/eslint.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/app.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/app.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/app.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/app.config.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/app.routes.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/enviroment.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/home.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/home.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/home.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/interfaces.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/guard/auth/auth.guard.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/guard/auth/auth.guard.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/index.html"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/main.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/booking/booking.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/booking/booking.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/supabase/supabase.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/supabase/supabase.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/therapist/therapist.spec.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/therapist/therapist.ts"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngIf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 7,
+                  "endLine": 4,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngIf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.html",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 6,
+                  "endLine": 14,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'NgModule' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 70,
+                  "endLine": 1,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type string trivially inferred from a string literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 3,
+                  "endLine": 27,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected any. Specify a different type."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 19,
+                  "endLine": 29,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected any. Specify a different type."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 28,
+                  "endLine": 63,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'error' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 16,
+                  "endLine": 107,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'event' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/calendar/calendar.component.ts",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 13,
+                  "endLine": 121,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html",
+                  "index": 37
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 56,
+                  "endLine": 52,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html",
+                  "index": 37
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 54,
+                  "endLine": 55,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html",
+                  "index": 37
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 17,
+                  "endLine": 67,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html",
+                  "index": 37
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 17,
+                  "endLine": 67,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.html",
+                  "index": 37
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 37,
+                  "endLine": 60,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type number trivially inferred from a number literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.ts",
+                  "index": 39
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 3,
+                  "endLine": 19,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type number trivially inferred from a number literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.ts",
+                  "index": 39
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 3,
+                  "endLine": 36,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type number trivially inferred from a number literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.ts",
+                  "index": 39
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 3,
+                  "endLine": 37,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/create-turn/create-turn.component.ts",
+                  "index": 39
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 15,
+                  "endLine": 39,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 50,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 50,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 5,
+                  "endLine": 49,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 5,
+                  "endLine": 49,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 56,
+                  "endLine": 15,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 54,
+                  "endLine": 17,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "click must be accompanied by either keyup, keydown or keypress event for accessibility."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 17,
+                  "endLine": 26,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/click-events-have-key-events",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Elements with interaction handlers must be focusable."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 17,
+                  "endLine": 26,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/interactive-supports-focus",
+          "ruleIndex": 1
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Use built-in control flow instead of directive ngForOf."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.html",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 38,
+                  "endLine": 20,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/prefer-control-flow",
+          "ruleIndex": 2
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Output bindings, including aliases, should not be named \"on\", nor prefixed with it (https://angular.dev/guide/components/outputs#choosing-event-names)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.ts",
+                  "index": 42
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/no-output-on-prefix",
+          "ruleIndex": 7
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Output bindings, including aliases, should not be named \"on\", nor prefixed with it (https://angular.dev/guide/components/outputs#choosing-event-names)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.ts",
+                  "index": 42
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/no-output-on-prefix",
+          "ruleIndex": 7
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type number trivially inferred from a number literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.ts",
+                  "index": 42
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 3,
+                  "endLine": 23,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type number trivially inferred from a number literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/edit-turn/edit-turn.component.ts",
+                  "index": 42
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 3,
+                  "endLine": 24,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'Therapist' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/home.component.ts",
+                  "index": 45
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 10,
+                  "endLine": 4,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'SessionWithPatient' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.ts",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 10,
+                  "endLine": 2,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'EditTurnComponent' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.ts",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 10,
+                  "endLine": 9,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected any. Specify a different type."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.ts",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 19,
+                  "endLine": 22,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected any. Specify a different type."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/home/today-menu/today-menu.component.ts",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 28,
+                  "endLine": 50,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Expected `!==` but received `!=`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.html",
+                  "index": 50
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 10,
+                  "endLine": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/template/eqeqeq",
+          "ruleIndex": 8
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type string trivially inferred from a string literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 3,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type string trivially inferred from a string literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 3,
+                  "endLine": 16,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type string trivially inferred from a string literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 3,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type boolean trivially inferred from a boolean literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 3,
+                  "endLine": 18,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Type boolean trivially inferred from a boolean literal, remove type annotation."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 3,
+                  "endLine": 19,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-inferrable-types",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 5,
+                  "endLine": 22,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/app/login/login.component.ts",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 5,
+                  "endLine": 23,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'of' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.ts",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 33,
+                  "endLine": 3,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'BookingService' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.ts",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 10,
+                  "endLine": 6,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.ts",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 15,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/auth/auth.service.ts",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 39,
+                  "endLine": 16,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/booking/booking.ts",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 15,
+                  "endLine": 9,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'Session' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/therapist/therapist.ts",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 10,
+                  "endLine": 3,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "ruleIndex": 3
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Prefer using the inject() function over constructor parameter injection. Use Angular's migration schematic to automatically refactor: ng generate @angular/core:inject"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/JORGE%20MARTINEZ%20S/Desktop/UCB/2026-1/Taller%20de%20Dise%C3%B1o%20de%20Software/Primer%20Bloque/MyTherapist/src/services/therapist/therapist.ts",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 15,
+                  "endLine": 9,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "ruleId": "@angular-eslint/prefer-inject",
+          "ruleIndex": 6
+        }
+      ]
+    }
+  ]
+}
