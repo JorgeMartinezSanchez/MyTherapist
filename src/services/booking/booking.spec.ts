@@ -121,4 +121,53 @@ describe('BookingService', () => {
 
     await expect(service.deleteSession(mockSession.id)).rejects.toEqual(mockError);
   });
+  
+  describe('deleteSession()', () => {
+
+    it('debería retornar true al eliminar exitosamente', async () => {
+      mockSupabaseClient.eq.mockResolvedValue({ error: null });
+
+      const result = await service.deleteSession(mockSession.id);
+
+      expect(result).toBe(true);
+    });
+
+    it('debería llamar a .eq() con el id convertido a número', async () => {
+      mockSupabaseClient.eq.mockResolvedValue({ error: null });
+
+      await service.deleteSession('42');
+
+      expect(mockSupabaseClient.eq).toHaveBeenCalledWith('id', 42); // number, no string
+    });
+
+    it('debería llamar a delete() sobre la tabla Sessions', async () => {
+      mockSupabaseClient.eq.mockResolvedValue({ error: null });
+
+      await service.deleteSession(mockSession.id);
+
+      expect(mockSupabaseClient.from).toHaveBeenCalledWith('Sessions');
+      expect(mockSupabaseClient.delete).toHaveBeenCalled();
+    });
+
+    it('debería lanzar el error si Supabase falla', async () => {
+      const mockError = { message: 'Delete failed', code: '23503' };
+      mockSupabaseClient.eq.mockResolvedValue({ error: mockError });
+
+      await expect(service.deleteSession(mockSession.id)).rejects.toEqual(mockError);
+    });
+
+    it('debería registrar en consola el error antes de lanzarlo', async () => {
+      const mockError = { message: 'Delete failed', code: '23503' };
+      mockSupabaseClient.eq.mockResolvedValue({ error: mockError });
+      const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
+      await expect(service.deleteSession(mockSession.id)).rejects.toEqual(mockError);
+
+      expect(consoleSpy).toHaveBeenCalledWith(
+        'Error al eliminar la sesión:',
+        mockError
+      );
+      consoleSpy.mockRestore();
+    });
+  });
 });
