@@ -70,21 +70,7 @@
         },
         "test": {
           "builder": "@angular-builders/jest:run",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "configPath": ["jest.config.js"],
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "public"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
+          "options": {}
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
