@@ -6,8 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint"
+    "test": "jest",
+    "test:coverage": "jest --coverage --coverageReporters=text-summary",
+    "test:coverage:all": "jest --coverage --coverageReporters=text-summary --maxWorkers=2 --forceExit",
+    "test:fix": "jest --coverage --coverageReporters=text-summary --testPathIgnorePatterns='calendar|today-menu|edit-turn|create-turn'",
+    "coverage:pdf": "jest --coverage && node generate-pdf.js"
   },
   "private": true,
   "dependencies": {
@@ -32,6 +35,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-builders/jest": "^21.0.3",
     "@angular-devkit/build-angular": "^21.2.1",
     "@angular/cli": "^21.2.1",
     "@angular/compiler-cli": "^21.2.2",
@@ -39,16 +43,20 @@
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@types/jasmine": "~5.1.0",
     "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@vitest/coverage-v8": "^4.1.7",
     "angular-eslint": "21.4.0",
     "eslint": "^10.3.0",
     "jasmine-core": "~5.6.0",
     "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
     "jest-preset-angular": "^16.1.5",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "puppeteer": "^25.1.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "8.59.2"
   }
