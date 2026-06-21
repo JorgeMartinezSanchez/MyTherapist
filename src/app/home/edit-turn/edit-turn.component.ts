@@ -9,13 +9,11 @@ import { NgFor } from '@angular/common';
 })
 export class EditTurnComponent implements OnInit {
   @Input() sessionId!: string;
-  @Input() currentDate!: string; // Ej: "2026-03-22"
-  @Input() currentTime!: string; // Te sugiero pasar también la hora desde el padre "14:30"
-  
+  @Input() currentDate!: string;
+  @Input() currentTime!: string; 
   @Output() onClose = new EventEmitter<void>();
-  @Output() onSave = new EventEmitter<{id: string, newDate: string, newTime: string}>(); // Agregué newTime
+  @Output() onSave = new EventEmitter<{id: string, newDate: string, newTime: string}>();
   
-  // --- Variables del Calendario ---
   public readonly weekDays: string[] = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
   public currentMonth!: number;
   public currentYear!: number;
@@ -29,9 +27,7 @@ export class EditTurnComponent implements OnInit {
   ];
 
   ngOnInit() {
-    // 1. Inicializar fecha basada en el Input si existe
     if (this.currentDate) {
-      // Nota: Añadimos 'T00:00:00' para evitar problemas de zona horaria al parsear
       this.selectedDate = new Date(this.currentDate + 'T00:00:00');
       this.currentMonth = this.selectedDate.getMonth();
       this.currentYear = this.selectedDate.getFullYear();
@@ -41,7 +37,6 @@ export class EditTurnComponent implements OnInit {
       this.currentYear = now.getFullYear();
     }
 
-    // 2. Inicializar hora basada en el Input si existe
     if (this.currentTime) {
       const parts = this.currentTime.split(':');
       this.displayHour = parseInt(parts[0], 10);
@@ -49,7 +44,6 @@ export class EditTurnComponent implements OnInit {
     }
   }
 
-  // --- Lógica de Meses ---
   public get monthName(): string { return this.MONTH_NAMES[this.currentMonth]; }
   
   public prevMonth(): void {
@@ -70,7 +64,6 @@ export class EditTurnComponent implements OnInit {
     }
   }
 
-  // --- Lógica de Días ---
   public getDaysInMonth(): number[] {
     const daysCount = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
     return Array.from({ length: daysCount }, (_, i) => i + 1);
@@ -116,7 +109,6 @@ export class EditTurnComponent implements OnInit {
   public incrementMinute(): void { this.displayMinute = (this.displayMinute + 5) % 60; }
   public decrementMinute(): void { this.displayMinute = (this.displayMinute + 55) % 60; }
 
-  // --- Acciones del Modal ---
   cancel(event: Event) {
     event.stopPropagation();
     this.onClose.emit();
@@ -127,8 +119,7 @@ export class EditTurnComponent implements OnInit {
       alert("Please select a date");
       return;
     }
-    
-    // Formatear para Supabase
+
     const formattedDate = this.selectedDate.toISOString().split('T')[0];
     const formattedTime = `${this.padZero(this.displayHour)}:${this.padZero(this.displayMinute)}`;
     
