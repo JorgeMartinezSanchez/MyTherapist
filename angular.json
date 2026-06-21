@@ -21,10 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "public"
             ],
             "styles": [
               "src/custom-theme.scss",
