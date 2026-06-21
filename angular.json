@@ -78,10 +78,7 @@
             "configPath": ["jest.config.js"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "public"
             ],
             "styles": [
               "src/styles.css"
