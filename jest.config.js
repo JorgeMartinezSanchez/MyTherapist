@@ -1,6 +1,8 @@
 module.exports = {
   preset: 'jest-preset-angular',
-  setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
+  setupFilesAfterFramework: ['jest-preset-angular/setup-jest'],  // ← el del preset
+  setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],   
+  restoreMocks: true,
   testMatch: ['**/+(*.)+(spec).+(ts)'],
   transform: {
     '^.+\\.(ts|js|mjs|html)$': [
@@ -12,32 +14,17 @@ module.exports = {
       },
     ],
   },
-  // ⬇️ CRÍTICO: Transformar módulos ESM de Angular
   transformIgnorePatterns: [
     'node_modules/(?!(.*\\.mjs$|@angular|@fullcalendar|preact|rxjs)/.*)'
   ],
   moduleNameMapper: {
     '^src/(.*)$': '<rootDir>/src/$1',
     '^app/(.*)$': '<rootDir>/src/app/$1',
-    // Mocks para FullCalendar
-    '^@fullcalendar/angular$': '<rootDir>/src/__mocks__/@fullcalendar/angular.ts',
-    '^@fullcalendar/core$': '<rootDir>/src/__mocks__/@fullcalendar/core.ts',
-    '^@fullcalendar/daygrid$': '<rootDir>/src/__mocks__/@fullcalendar/daygrid.ts',
-    '^@fullcalendar/timegrid$': '<rootDir>/src/__mocks__/@fullcalendar/timegrid.ts',
-    '^@fullcalendar/interaction$': '<rootDir>/src/__mocks__/@fullcalendar/interaction.ts',
   },
-  // Configuración ESM
   extensionsToTreatAsEsm: ['.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'mjs'],
   testEnvironment: 'jsdom',
-  collectCoverageFrom: [
-    'src/services/**/*.ts',
-    '!src/services/**/*.spec.ts',
-  ],
-  testPathPattern: 'services',
-  coverageDirectory: 'coverage',
-  coverageReporters: ['text-summary', 'text', 'html', 'lcov'],
-  // Velocidad y rendimiento
+  testPathPatterns: ['src'],
   maxWorkers: 2,
-  verbose: false,
+  verbose: true,
 };

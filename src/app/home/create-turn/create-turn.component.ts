@@ -171,36 +171,37 @@ export class CreateTurnComponent {
       return;
     }
 
-    // Formatear hora y fecha
-    const time = `${this.padZero(this.displayHour)}:${this.padZero(this.displayMinute)}`;
-    const date = this.selectedDate.toISOString().split('T')[0]; // "2026-03-21"
-
-    // Obtener therapist_id del usuario logueado
     const currentUser = this.authService.getCurrentUser();
     if (!currentUser) {
       alert('No authenticated user found.');
       return;
     }
 
-    // Armar los objetos que espera bookPatient
-    const patientData = {
-      full_name: this.patientForm.get('name')!.value,
-      number_phone: this.patientForm.get('phone')!.value,
-      email: this.patientForm.get('email')!.value,
-    };
-
-    const sessionData = {
-      therapist_id: currentUser.id,
-      date: date,
-      time: time,
-    };
-
     try {
-      await this.bookingService.bookPatient(patientData, sessionData);
+      await this.bookingService.bookPatient(
+        this.buildPatientData(),
+        this.buildSessionData(currentUser.id)
+      );
       this.router.navigate(['/home/today']);
     } catch (error) {
       console.error('Error creating turn:', error);
       alert('Error al crear el turno. Intente nuevamente.');
     }
+  }
+
+  private buildPatientData() {
+    return {
+      full_name:    this.patientForm.get('name')!.value,
+      number_phone: this.patientForm.get('phone')!.value,
+      email:        this.patientForm.get('email')!.value,
+    };
+  }
+
+  private buildSessionData(therapistId: string) {
+    return {
+      therapist_id: therapistId,
+      date: this.selectedDate!.toISOString().split('T')[0],
+      time: `${this.padZero(this.displayHour)}:${this.padZero(this.displayMinute)}`,
+    };
   }
 }
